@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* 글자모양, 크기, 색상 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333333;
+  font-size: 12px;
+  max-width: 414px;
+  margin: 0px auto;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+
+.total_btn{
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  padding: 12px 0px 0px 10px;
+  cursor: pointer;
+}
+header .bar{
+  display: inline-block;
+  width: 36px;
+  height: 3px;
+  background-color: #333333;
+}
+h1{
+  padding:10px 0px 0px 10px
+}
+h1 img{
+  height: 60px;
+}
+
+footer{
+  position: relative;
+  text-align: center;
+}
+footer .t_btn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 12px 8px 12px 8px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 4px;
+}
+footer a:nth-child(2){
+  border: 1px solid #333333;
+  padding: 10px 5px;
+  background-color: #cccccc;
+  color: #333333;
+  display: block;
+  width: 80px;
+  margin: 0px auto 20px auto;
+  
+}
+address{
+  font-style: normal;
+  line-height: 18px;
+}
+footer h2 img{
+  padding-top: 10px;
+  height: 60px;
+}

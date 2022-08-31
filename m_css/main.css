@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+main>.slide{
+  height: 60vh; /*vertical height*/
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10%;
+}
+main .slide>h2 , .con h2{
+  display: none;
+}
+.swiper-slide{
+  position: relative;
+}
+.swiper-slide>h2{
+  position: absolute;
+  color: #ffffff;
+  background-color: rgba(0,0,0,.8);
+  font-size: 20px;
+  font-weight: 500;
+  width: 230px;
+  text-align: center;
+  padding: 6px 10px;
+  line-height: 30px;
+  left: 50%;
+  top: 26%;
+  transform: translate(-50%, -50%);
+  border-radius: 40px;
+}
+main>nav{
+  width: 90%;
+  margin: 20px auto;
+}
+
+.c_btn{
+  z-index: 1100;
+  color: #ffffff;
+  font-size: 34px;
+  position: absolute;
+  top: 1%;
+  left: 4%;
+}
+.gnb{
+  background-color: #DB6C63;
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  top: 0px; right: 0px;
+}
+
+/* 검색폼 서식 */
+.gnb fieldset{border: none;}
+.gnb legend{display: none;}
+.gnb input{
+  height: 30px;
+  padding: 0px 10px;
+  border-radius: 3px;
+  border: none;
+}
+.gnb input[type=search]{
+  width: 130px;
+  margin-right: 6px;
+}
+.gnb input[type=button]{
+  width: 60px;
+  background-color: #5e5d5d;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.gnb>li:first-child{
+  line-height: 70px;
+  text-align: center;
+  background-color: #9e5953;
+}
+
+.gnb>li{
+  border-bottom: 1px solid #ffffff;
+  text-indent: 20px;
+}
+.gnb>li:nth-child(8){
+  border: none;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  bottom: 40px;
+}
+.gnb>li:nth-child(9){
+  border: none;
+  display: inline-block;
+  position: absolute;
+  right: 55px;
+  bottom: 40px;
+}
+.gnb>li:last-child{
+  border: none;
+  display: inline-block;
+  position: absolute;
+  right: 105px;
+  bottom: 40px;
+}
+.gnb>li>label{
+  color: #ffffff;
+  font-size: 1rem;/*16px*/
+  font-weight: 300;
+  line-height: 40px;
+  display: block;
+  cursor: pointer;
+}
+.gnb>li i.fas{
+  float: right;
+  font-size: 1.2rem;
+  transform: translate(-10px,10px);
+}.gnb>li input[type=checkbox]{
+  display: none;
+}
+#mnu01:checked+.sub{
+  display: block;
+}
+#mnu02:checked+.sub{
+  display: block;
+}
+#mnu03:checked+.sub{
+  display: block;
+}
+#mnu04:checked+.sub{
+  display: block;
+}
+#mnu05:checked+.sub{
+  display: block;
+}
+#mnu06:checked+.sub{
+  display: block;
+}
+.sub{
+  background-color: #e69f99;
+  display: none;
+}
+.sub a{
+  color: #ffffff;
+  font-size: 0.8rem;
+  line-height: 40px;
+  display: block;
+  text-indent: 20px;
+}
+#toggle{
+  display: none;
+}
+.nav_wrap{
+  background-color: rgba(0,0,0,.8);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 100%;
+  z-index: 1000;
+  transition: 0.5s;
+}
+.nav_wrap .fab{
+  color: #ffffff;
+  font-size: 30px;
+  border: none;
+}
+#toggle:checked~header>.nav_wrap{
+  left: 0%;
+}
+.con nav>ul{
+  text-align: center;
+}
+.con nav>ul>li{
+  border: 1px solid #cccccc;
+  width: 28%;
+  display: inline-block;
+  margin: 0px 0px 5px 0px;
+}
+
+.con nav>ul>li .icon{
+  background-image: url('../images/nav_icon.png');
+  width: 83px;
+  height: 66px;
+  background-size: 360px;
+  display: inline-block;
+}
+.con nav>ul>li:nth-child(2) .icon{
+  background-position: -82px 0px;
+}
+.con nav>ul>li:nth-child(3) .icon{
+  background-position: -164px 0px;
+}
+.con nav>ul>li:nth-child(4) .icon{
+  background-position: -244px 0px;
+  width: 110px;
+}
+.con nav>ul>li:nth-child(5) .icon{
+  background-position: 0px -65px;
+}
+
+.con nav>ul>li:last-child .icon{
+  background-position: -67px -65px;
+}
+.con nav>ul>li .mnu{
+  display: block;
+  padding: 10px 0px;
+  font-size: 1rem; /*1rem=16px*/
+  font-weight: 500;
+}
+.map_btn{
+  display: block;
+  margin: 0px auto;
+  width: 86%;
+  text-align: center;
+  border: 1px solid #333333;
+}
+main .map_btn>.icon{
+  background-image: url('../images/nav_icon.png');
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-size: 360px;
+  background-position: -164px -64px;
+  margin-right: 20px;
+  position: relative;
+  top: -10px;
+}
+main .map_btn>.mnu{
+  display: inline-block;
+  padding: 10px 0px;
+  font-size: 1rem; /*1rem=16px*/
+  font-weight: 500;
+}
+
+/* 둔산점 전화번호 */
+.info{
+  width:90%;  height:70px;
+  margin:5% auto;
+  background-image:url('../images/info_back.png');
+  color:#ffffff;  
+  background-size:100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.tel{
+  padding-top:16px;
+  line-height:20px;
+  display: inline-block;
+}
+.tel a{
+  color:#fff;
+  font-size:1rem;
+}
+span.fa-phone{
+  font-size: 1.5rem;
+  transform: translateY(-10px);
+  display: inline-block;
+}

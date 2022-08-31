@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>현대 슬라이드</title>
+  <link rel="stylesheet" href="../css/swiper.css" type="text/css">
+  <script src="../script/swiper.js"></script>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    article{
+      width: 353px;
+      margin: 0px auto;
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+    }
+    .wiper-pagination{
+      position: absolute;
+      z-index: 999999;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" title="추석 특별무상점검 서비스">
+            <img src="./img/slide1.jpg" alt="추석 특별 무상점검">
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="#" title="LONGEST RUN">
+            <img src="./img/slide2.jpg" alt="LONGEST RUN">
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="#" title="캐스퍼는 대표님이 쏘세요">
+            <img src="./img/slide3.jpg" alt="캐스퍼는 대표님이 쏘세요">
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="#" title="캐스퍼 알림">
+            <img src="./img/slide4.jpg" alt="캐스퍼 알림">
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="#" title="키즈 헤드레스트 런칭 프로모션">
+            <img src="./img/slide5.jpg" alt="키즈 헤드레스트 런칭 프로모션">
+          </a>
+        </div>
+
+      </div>
+      <div class="wiper-pagination"></div>
+    </div>
+  </article>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      effect: "slide", /*페이드아웃, 페이드인효과 */
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".wiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

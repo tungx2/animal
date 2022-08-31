@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+header{
+  height: 70px;
+}
+
+footer{
+  background-color: #ccc;
+  height: 210px;
+}

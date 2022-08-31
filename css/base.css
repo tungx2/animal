@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* 글자모양, 크기, 색상 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333333;
+  font-size: 12px;
+}
+
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+.h_top{
+  width: 1020px;
+  height: 30px;
+  margin: 0px auto;
+  background-color: #4E4D5F;
+}
+ul{
+  list-style: none;
+}
+.sns{
+  width: 760px;
+  float: left;
+  text-align: right;
+}
+header .lnb{
+  width: 260px;
+  float: right;
+}
+header .lnb>ul{
+  display: flex;
+  justify-content: space-around;
+  background-color: #525d9f;
+  color: #ffffff;
+}
+.lnb a{
+  color: #ffffff;
+  line-height: 30px;
+}
+
+header .lnb >ul>li::after{
+  content: '·';
+  padding-left: 22px;
+}
+.lnb>ul>li:last-child::after{
+  display: none;
+}
+
+footer{
+  position: relative;
+}
+.f_inner{
+  width: 1020px;
+  margin: 0px auto;
+
+}
+.f_inner>h2{
+  position:absolute;
+  right: 0px;
+}
+.f_inner .lnb>ul>li{display: inline;}
+.f_inner .lnb>ul>li>a{
+  color: #333333;
+  line-height: 40px;
+  padding: 0px 10px;
+}
+.f_inner .lnb>ul>li>a:hover{text-decoration: underline;}
+.f_inner address{
+  padding-top: 20px;
+}
+  
